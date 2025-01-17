@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinnacle Harbor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: #2E86C1;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero .cta {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #2E86C1;
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .featured {
+            padding: 2rem;
+            text-align: center;
+        }
+        .featured h2 {
+            margin-bottom: 1rem;
+        }
+        .featured .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .featured .product {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pinnacle Harbor</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to Pinnacle Harbor</h1>
+            <p>Explore the heights of quality and value.</p>
+            <button class="cta" onclick="window.location.href='https://amazon.com'">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Category 1</h3>
+                <p>Explore our top-quality items.</p>
+            </div>
+            <div class="product">
+                <h3>Category 2</h3>
+                <p>Discover what makes us unique.</p>
+            </div>
+            <div class="product">
+                <h3>Category 3</h3>
+                <p>Elevate your lifestyle with premium goods.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pinnacle Harbor. All rights reserved.</p>
+        <p><a href="mailto:info@pinnacleharbor.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>
